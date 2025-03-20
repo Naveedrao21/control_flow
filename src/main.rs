@@ -28,5 +28,20 @@ fn main() {
         println!("The value of number is: {number}");
 
 
+
+    }
+    fn main() {
+        let condition = true;
+    
+        let number = if condition { 5 } else { "six" }; 
+        /*
+        let number = if condition { 5 } else { "six" };
+   |                                     -          ^^^^^ expected integer, found `&str`
+   |                                     |
+   |                                     expected because of this
+         */
+    
+        println!("The value of number is: {number}");
     }
 }
+
