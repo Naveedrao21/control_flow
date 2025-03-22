@@ -30,18 +30,39 @@ fn main() {
 
 
     }
-    fn main() {
-        let condition = true;
+
+//     let condition = true;
     
-        let number = if condition { 5 } else { "six" }; 
-        /*
-        let number = if condition { 5 } else { "six" };
-   |                                     -          ^^^^^ expected integer, found `&str`
-   |                                     |
-   |                                     expected because of this
-         */
+//         let number = if condition { 5 } else { "six" }; 
+//         /*
+//         let number = if condition { 5 } else { "six" };
+//    |                                     -          ^^^^^ expected integer, found `&str`
+//    |                                     |
+//    |                                     expected because of this
+//          */
     
-        println!("The value of number is: {number}");
-    }
+//         println!("The value of number is: {number}");
+    
+// loop expression:
+    let mut rao = 0;
+
+    let rao_naveed = loop {
+        rao += 2;
+        if rao == 10 {
+        break rao * 2;
+        } else {
+        println!("rao is not 10");
+        }
+
+    };
+
+    println!("The value of rao_naveed is: {rao_naveed}");
+
+   
+
+
+
+
+
 }
 
