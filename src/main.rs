@@ -58,8 +58,26 @@ fn main() {
 
     println!("The value of rao_naveed is: {rao_naveed}");
 
-   
+    // Loop Labels
+    let mut count = 0;
+    'naveed: loop{
+        println!("count is: {}", count);
+        let mut remaining = 10;
 
+        loop {
+            println!("remaining is: {}", remaining);
+            if remaining == 9{
+                break;
+            }
+            if count == 2{
+                break 'naveed; 
+            }
+            remaining -= 1; 
+        }
+
+        count += 1;
+    }
+    println!("End of count = {count}");
 
 
 
