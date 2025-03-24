@@ -79,8 +79,44 @@ fn main() {
     }
     println!("End of count = {count}");
 
+    // While loop
+    let mut number = 3;
+    while number != 0 {
+        println!("{number}!");
+        number -= 1;
+    }
+    println!("ye line tab hi print ho gi jab while loop khatam ho jaye ga");
 
+    // Looping Through a array with while
+    let a = [10, 20, 30];
+    let mut index = 0;
 
+    while index < 3{
+        println!("The value is a: {}", {a[index]});
+        index += 1;
+    }
+
+    /*
+    The value is: 10
+    The value is: 20
+    The value is: 30
+
+    error:
+    thread 'main' panicked at src/main.rs:94:39:
+    index out of bounds: the len is 3 but the index is 3
+    
+     */
+
+    // Looping Through a array with for
+    let b = [10, 20, 30, 40, 50];
+    for element in b{
+        println!("The value is b: {}", element);
+    }
+
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
 
 }
 
